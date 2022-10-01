@@ -74,6 +74,10 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/require-default-props': 'off',
+    'no-param-reassign': [
+      'error',
+      { props: true, ignorePropertyModificationsFor: ['state'] },
+    ],
     'react/jsx-filename-extension': [
       'warn',
       { extensions: ['.jsx', '.tsx', '.js', '.ts'] },
